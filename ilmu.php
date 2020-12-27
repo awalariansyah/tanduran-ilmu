@@ -6,7 +6,7 @@
 		$go = mysqli_query($conn, $query);
 		$el = mysqli_fetch_array($go);
 
-		if(mysqli_num_rows($el) == 0){
+		if(mysqli_num_rows($go) == 0){
 			header('location:artikel.php');
 		};
 			?>
