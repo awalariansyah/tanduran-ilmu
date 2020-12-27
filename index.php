@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
+	<!-- Meta Tag -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="Tanduran Ilmu"/>
+    <meta property="og:title" content="Tanduran Ilmu - Tanam Ilmu Lestarikan Pohon"/>
+    <meta property="og:description" content="Tanduran Ilmu adalah situs web yang bertujuan sebagai wadah berbagi ilmu yang dapat membantu orang lain serta sebagai wadah pengumpulan dana guna pelestarian pohon."/>
+    <meta property="og:image" content="http://tanduranilmu.rf.gd/assets/img/logo-berwarna.png" />
+    <meta property="og:type" content="blog"/>
+    <meta property="og:url" content="http://tanduranilmu.rf.gd/">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<title>Tanduran Ilmu | Tanam Ilmu Lestarikan Pohon</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -19,7 +46,7 @@
 			</ul>
 			<div class="masuk">
 				<div class="premasuk">
-					<a class="tombol">Masuk</a>
+					<a class="tombol" href="mulai.php?masuk">Masuk</a>
 				</div>
 				<button onclick="openSidebar(this)" class="menuIcon">
 					<svg width="40" height="40">
@@ -38,9 +65,9 @@
 				<p>Kami adalah situs web yang bertujuan sebagai wadah berbagi ilmu yang dapat membantu orang lain serta sebagai wadah pengumpulan dana guna pelestarian pohon.</p>
 			</div>
 			<div class="showcase-button">
-				<a class='white-btn'>Daftar Menjadi Tandurarian</a>
+				<a class='white-btn' href="mulai.php?daftar">Daftar Menjadi Tandurarian</a>
 				<span class="spacing"> </span>
-				<a class='black-btn'>Cari Artikel</a>
+				<a class='black-btn' href="artikel.php">Cari Artikel</a>
 			</div>
 		</div>
 	</section>
@@ -69,13 +96,13 @@
 					<h2>Hubungi kami</h2>
 				</div>
 				<div class="section-desc contact-desc">
-					<p>Kami selalu siap menerima masukan, saran dan kritikan dari anda.</p>
+					<p>Kami selalu siap menerima masukan, saran dan kritikan dari anda. Beritahu kami jika anda ingin bekerja sama dengan kami.</p>
 				</div>
-				<form class="formulir" action="">
-						<input type="text" placeholder="Nama" maxlength="20">
-						<input type="email" placeholder="Email" maxlength="20">
-						<input type="number" placeholder="No. Handphone"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "13">
-						<textarea placeholder="Pesan Anda" maxlength="300"></textarea>
+				<form class="formulir" method="post" action="mail.php">
+						<input type="text" placeholder="Nama" maxlength="20" name="nama">
+						<input type="email" placeholder="Email" maxlength="100" name="email">
+						<input type="number" placeholder="No. Handphone" name="no" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "13">
+						<textarea name="pesan" placeholder="Pesan Anda" maxlength="300"></textarea>
 						<input class="black-btn" type="submit" value="Kirim">
 				</form>
 			</div>
@@ -90,31 +117,31 @@
 		<div class="container">
 			<div class="dokumentasiboard">
 				<h2 class="section-title">Dokumentasi</h2>
-				<p class="section-desc">Galeri kondisi alam temuan kami di daerah Cilacap.</p>
+				<p class="section-desc">Galeri kondisi alam temuan kami di daerah Cilacap akhir tahun 2020.</p>
 				<div class="galeri">
 					<div class="imgwrap">
 						<span><p>Hutan Cinangsi</p></span>
-						<img src="assets/img/galeri/1.jpg" alt="">
+						<img onclick="openModal(this.src)" src="assets/img/galeri/1.jpg" alt="Hutan Cinangsi">
 					</div>
 					<div class="imgwrap">
 						<span><p>Hutan Mangrove Kampung Laut</p></span>
-						<img src="assets/img/galeri/2.jpg" alt="">
+						<img onclick="openModal(this.src)" src="assets/img/galeri/2.jpg" alt="Hutan Mangrove Kampung Laut">
 					</div>
 					<div class="imgwrap">
 						<span><p>Hutan Mangrove Kampung Laut</p></span>
-						<img src="assets/img/galeri/3.jpg" alt="">
+						<img onclick="openModal(this.src)" src="assets/img/galeri/3.jpg" alt="Hutan Mangrove Kampung Laut">
 					</div>
 					<div class="imgwrap">
 						<span><p>Banjir Kedungreja</p></span>
-						<img src="assets/img/galeri/6.jpg" alt="">
+						<img onclick="openModal(this.src)" src="assets/img/galeri/6.jpg" alt="Banjir Kedungreja">
 					</div>
 					<div class="imgwrap">
 						<span><p>Banjir Cipari</p></span>
-						<img src="assets/img/galeri/7.jpg" alt="">
+						<img onclick="openModal(this.src)" src="assets/img/galeri/7.jpg" alt="Banjir Cipari">
 					</div>
 					<div class="imgwrap">
 						<span><p>Banjir Sidamulya</p></span>
-						<img src="assets/img/galeri/8.jpg" alt="">
+						<img onclick="openModal(this.src)" src="assets/img/galeri/8.jpg" alt="Banjir Sidamulya">
 					</div>
 				</div>
 			</div>
@@ -133,22 +160,22 @@
 		<div class="container">
 			<div class="teammember">
 				<div class="profileboard pa">	
-					<img src="assets/img/team/awal.jpg" alt="">
+					<img src="assets/img/team/awal.jpg" alt="Awal Ariansyah">
 					<h3>Awal Ariansyah</h3>
 					<p>Web Developer</p>
 				</div>
 				<div class="profileboard pb">	
-					<img src="assets/img/team/rafiq.jpg" alt="">
+					<img src="assets/img/team/rafiq.jpg" alt="Rafiq Chasnan Habibi">
 					<h3>Rafiq Chasnan Habibi</h3>
 					<p>Graphic Designer</p>
 				</div>
 				<div class="profileboard pc">	
-					<img src="assets/img/team/khusna.jpg" alt="">
+					<img src="assets/img/team/khusna.jpg" alt="Khusna Salsabila">
 					<h3>Khusna Salsabila</h3>
 					<p>Content Writer</p>
 				</div>
 				<div class="profileboard pd">	
-					<img src="assets/img/team/edgar.jpg" alt="">
+					<img src="assets/img/team/edgar.jpg" alt="Edgar Miko Fernanda">
 					<h3>Edgar Miko Fernanda</h3>
 					<p>Photographer</p>
 				</div>
@@ -160,7 +187,7 @@
 			<h2 class="join-title section-title">Sudah siap bergerak untuk alam?</h2>
 		</center>
 		<div>
-			<a class="black-btn" href="#">Bergabung Untuk Tandurarian</a>
+			<a class="black-btn" href="mulai.php?daftar">Bergabung Menjadi Tandurarian</a>
 		</div>
 	</section>
 	<section id="footer">
@@ -172,40 +199,40 @@
 						<p class="section-desc fw lf">Jl. Raya Majenang - Cimanggu KM 08 No 99 Desa Cilempuyang, Kec. Cimanggu, Kabupaten Cilacap, Jawa Tengah 53256</p><p class="section-desc fw lf">cs@tanduranilmu.com</p><p class="section-desc fw lf">+62 854 3209 XXXX</p>
 					</div>
 					<div class="socmed-board">
-						<img src="assets/img/icon/fb.png" alt="">
-						<img src="assets/img/icon/tw.png" alt="">
-						<img src="assets/img/icon/ig.png" alt="">
-						<img src="assets/img/icon/yt.png" alt="">
+						<img src="assets/img/icon/fb.png" alt="Facebook Tanduran Ilmu">
+						<img src="assets/img/icon/tw.png" alt="Twitter Tanduran Ilmu">
+						<img src="assets/img/icon/ig.png" alt="Instagram Tanduran Ilmu">
+						<img src="assets/img/icon/yt.png" alt="Youtube Tanduran Ilmu">
 					</div>
 				</div>
 				<div class="right-footer">
 					<div class="empty"></div>
 					<p class="fg">Laman Terkait</p>
 					<ul class="link-list">
-						<li><a href="">Kebijakan Privasi</a></li>
-						<li><a href="">Peraturan Website</a></li>
-						<li><a href="">STMIK Komputama</a></li>
+						<li><a href="#">Kebijakan Privasi</a></li>
+						<li><a href="#">Peraturan Website</a></li>
+						<li><a href="http://stmikkomputama.ac.id/">STMIK Komputama</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="bottom-footer">
-				<div class="sponsor"><img src="assets/img/sponsor/cintaforest.png" alt=""></div>
-				<div class="sponsor"><img src="assets/img/sponsor/gallerymacul.png" alt=""></div>
-				<div class="sponsor"><img src="assets/img/sponsor/Girles.png" alt=""></div>
-				<div class="sponsor"><img src="assets/img/sponsor/GunaTani.png" alt=""></div>
-				<div class="sponsor"><img src="assets/img/sponsor/sahabatarit.png" alt=""></div>
-				<div class="sponsor"><img src="assets/img/sponsor/tudungan.png" alt=""></div>
-				<div class="sponsor"><img src="assets/img/sponsor/falahAlfaaz.png" alt=""></div>
-				<div class="sponsor"><img src="assets/img/sponsor/winihijo.png" alt="winih ijo"></div>
+				<div class="sponsor"><img src="assets/img/sponsor/cintaforest.png" alt="Sponsor Cinta Forest"></div>
+				<div class="sponsor"><img src="assets/img/sponsor/gallerymacul.png" alt="Sponsor Gallery Macul"></div>
+				<div class="sponsor"><img src="assets/img/sponsor/Girles.png" alt="Sponsor Girles"></div>
+				<div class="sponsor"><img src="assets/img/sponsor/GunaTani.png" alt="Sponsor Guna Tani"></div>
+				<div class="sponsor"><img src="assets/img/sponsor/sahabatarit.png" alt="Spnsor Sahabat Arit"></div>
+				<div class="sponsor"><img src="assets/img/sponsor/tudungan.png" alt="Sponsor Tudungan"></div>
+				<div class="sponsor"><img src="assets/img/sponsor/falahAlfaaz.png" alt="Sponsor Falah Alfaaz"></div>
+				<div class="sponsor"><img src="assets/img/sponsor/winihijo.png" alt="Spnsor Winih Ijo"></div>
 			</div>
 			<div>
 				<hr class="line">
 			</div>
 				<div class="last-foot">
-					<img src="assets/img/logo-teks.png" alt="">
+					<img src="assets/img/logo-teks.png" alt=" Logo Teks Tanduran Ilmu">
 					<span></span>
 					<div class="foot">
-						<a class="foot-btn">Daftar</a>
+						<a class="foot-btn" href="mulai.php?daftar">Daftar</a>
 					</div>
 				</div>
 		</div>
@@ -214,7 +241,7 @@
 
 <div class="sidebar">
 	<div class="wrapper">
-		<img src="assets/img/logo-hitam.png" alt="">
+		<img src="assets/img/logo-hitam.png" alt="Logo Tanduran Ilmu Hitam">
 		<button class="closeButton">
 			<svg class="closeIcon" onclick="closeSidebar(this)" width="40" height="40" viewBox="0 0 12 12">
 				<g fill="none" fill-rule="evenodd" aria-hidden="true">
@@ -225,13 +252,17 @@
 		</button>
 		<hr>
 		<ul>
-			<li><a href="/">Laman Utama</a></li>
-			<li><a href="#contact">Kontak</a></li>
+			<li><a href="/">Beranda</a></li>
+			<li><a href="artikel.php">Artikel</a></li>
 			<li><a href="#dokumentasi">Dokumentasi</a></li>
-			<li><a href="">Masuk</a></li>
-			<li><a href="">Daftar</a></li>
+			<li><a href="#">Privasi</a></li>
+			<li><a href="mulai.php?masuk">Masuk</a></li>
+			<li><a href="mulai.php?daftar">Daftar</a></li>
 		</ul>
 	</div>
+</div>
+<div onclick="closeModal(this)" class="modal">
+	<img src="" alt="">
 </div>
 <div class="backdrop" onclick="closeSidebar(this)"></div>
 <script type="text/javascript" src="assets/js/script.js"></script>
