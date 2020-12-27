@@ -5,7 +5,7 @@ Kami adalah situs web yang bertujuan sebagai wadah berbagi ilmu yang dapat memba
 1. Import database sql ada di folder sql/tanduranilmu.sql
 2. Konfigurasi database ada di folder config/koneksi.php
 
-##Regards
+## Regards
 Awal Ariansyah, Rafiq Chasnan Habibi, Edgar Miko Fernanda, Khusna Salsabila
 
-##STMIK Komputama Majenang
+## STMIK Komputama Majenang
