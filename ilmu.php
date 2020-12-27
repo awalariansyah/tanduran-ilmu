@@ -6,6 +6,9 @@
 		$go = mysqli_query($conn, $query);
 		$el = mysqli_fetch_array($go);
 
+		if(mysqli_num_rows($el) == 0){
+			header('location:artikel.php');
+		};
 			?>
 <!DOCTYPE html>
 <html lang="id">

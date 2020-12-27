@@ -32,12 +32,20 @@ function changeSide(a) {
 
 function m() {
     let extensions = ["jpg", "jpeg", "png"];
+    let title = document.forms[0][0].value;
     let image_file = document.forms[0].berkas.value;
     let image_size = document.forms[0].berkas.files[0].size;
     let image_length = document.forms[0].berkas.value.length;
     let pos = image_file.lastIndexOf('.') + 1;
     let ext = image_file.substring(pos, image_length);
     let final_ext = ext.toLowerCase();
+
+    if (title.length > 18){
+       if(!/\s/g.test(title)){
+           alert("Judul tidak boleh satu kata panjang, sertakan spasi");
+           return false;
+       }
+    }
 
     for (i = 0; i < extensions.length; i++) {
         if (extensions[i] == final_ext) {

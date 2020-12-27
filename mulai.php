@@ -37,7 +37,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body style="overflow-y: scroll;">
+<body style="display: grid">
 	<div class="wrappers">
 		<div class="logo-form">
 			<img src="assets/img/logo-putih.png" alt="">
