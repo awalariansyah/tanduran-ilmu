@@ -6,7 +6,7 @@
 	$ew = $_GET['v'];
 	if($ew == $user['username']){
 
-		$re = "DELETE FROM report WHERE postId = $qn"
+		$re = "DELETE FROM report WHERE postId = $qn";
 		$vb = "DELETE FROM post WHERE postId = $qn";
 		$go = mysqli_query($conn, $vb);
 		$gos = mysqli_query($conn, $re);
