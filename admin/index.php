@@ -251,7 +251,7 @@ include 'session.php';
 								<td><?= $rp['fullname'];?></td>
 								<td><a class="akmin greeny" onclick="openModal(this.ariaLabel)" href="#" aria-label='../assets/img/articles/<?= $rp['postImg'];?>' >Lihat</a></td>
 								<td><?= $rp['postDate'];?></td>
-								<td><a class="akmin edlia" target="_blank" href="article.php?id=<?= $rp['postId']?>">Lihat</a> <a href="delete-post?id=<?= $rp['postId']?>" onclick="return confirm('Apakah anda yakin ingin menghapus artikel ini?')" class="akmin redish">Hapus</a></td>
+								<td><a class="akmin edlia" target="_blank" href="article.php?id=<?= $rp['postId']?>">Lihat</a> <a href="delete-post.php?id=<?= $rp['postId']?>" onclick="return confirm('Apakah anda yakin ingin menghapus artikel ini?')" class="akmin redish">Hapus</a></td>
 							</tr>
 
 						<?php } ?>
@@ -304,7 +304,7 @@ include 'session.php';
 								<td><?= $rp['fullname'];?></td>
 								<td><a class="akmin greeny" onclick="openModal(this.ariaLabel)" href="#" aria-label='../assets/img/articles/<?= $rp['postImg'];?>' >Lihat</a></td>
 								<td><?= $rp['postDate'];?></td>
-								<td><a class="akmin edlia" target="_blank" href="article.php?id=<?= $rp['postId']?>">Lihat</a> <a href="delete-post?id=<?= $rp['postId']?>" onclick="return confirm('Apakah anda yakin ingin menghapus artikel ini?')" class="akmin redish">Hapus</a></td>
+								<td><a class="akmin edlia" target="_blank" href="article.php?id=<?= $rp['postId']?>">Lihat</a> <a href="delete-post.php?id=<?= $rp['postId']?>" onclick="return confirm('Apakah anda yakin ingin menghapus artikel ini?')" class="akmin redish">Hapus</a></td>
 							</tr>
 
 						<?php } ?>
