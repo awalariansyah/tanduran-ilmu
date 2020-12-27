@@ -4,6 +4,7 @@ Kami adalah situs web yang bertujuan sebagai wadah berbagi ilmu yang dapat memba
 ## Instalasi
 1. Import database sql ada di folder sql/tanduranilmu.sql
 2. Konfigurasi database ada di folder config/koneksi.php
+3. Login admin ada di admin/login.php, username: alel, password: alel
 
 ## Regards
 Awal Ariansyah, Rafiq Chasnan Habibi, Edgar Miko Fernanda, Khusna Salsabila
