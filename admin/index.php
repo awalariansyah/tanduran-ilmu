@@ -483,7 +483,7 @@ include 'session.php';
 								<th>Tayang</th>
 								<th>Aksi</th>
 							</tr>
-							<tr style="background:#ddd !important"><form method="POST" action="add-ads.php">
+							<tr style="background:#ddd !important"><form method="POST" enctype="multipart/form-data" action="add-ads.php">
 								<td></td>
 								<td contenteditable oninput="javascript: this.firstChild.value = this.innerText;" style="text-align: left;"><input class="hide" type="text" name="adstitle" value ="" required />Masukan iklan baru disini</td>
 								<td contenteditable oninput="javascript: this.firstChild.value = this.innerText;"><input type="text" class="hide" name="adsbrand" value ="" required />Merk disini</td>
